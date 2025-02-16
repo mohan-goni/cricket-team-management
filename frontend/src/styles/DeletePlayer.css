@@ -1,0 +1,36 @@
+/* ✅ Center delete player form */
+.delete-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* ✅ Input and button styles */
+.delete-container input,
+.delete-container button {
+  width: 300px;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 2px solid rgba(0, 123, 255, 0.7);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: rgb(43, 39, 39);
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+/* ✅ Placeholder Styling */
+.delete-container input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+/* ✅ Button Hover Effect */
+.delete-container button:hover {
+  background: rgba(0, 123, 255, 1);
+}

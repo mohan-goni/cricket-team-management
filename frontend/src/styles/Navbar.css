@@ -1,17 +1,86 @@
+/* ✅ General Navbar Styling */
 .navbar {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position : sticky;
+  top:0;
+  z-index:1000;
+}
+
+/* ✅ Navbar Brand */
+.navbar-brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.heading{
+  text-align:center;
+}
+
+.navbar-brand h1 {
+  color: rgb(33, 31, 31);
+  font-size: 22px;
+}
+
+/* ✅ Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(29, 25, 25);
+  font-weight: bold;
+  transition: 0.3s;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  background: rgba(0, 123, 255, 0.7);
+}
+
+/* ✅ Hamburger Menu (Mobile Only) */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: rgb(34, 29, 29);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
   }
-  
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    margin: 5px;
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
   }
-  
-  .navbar a:hover {
-    background-color: #555;
+
+  .nav-links.open {
+    display: flex;
   }
-  
+}

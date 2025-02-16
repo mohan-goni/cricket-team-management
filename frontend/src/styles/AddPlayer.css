@@ -1,0 +1,114 @@
+/* ✅ Center the entire form on the page */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url("https://source.unsplash.com/1600x900/?cricket") no-repeat center center/cover;
+  }
+  
+  /* ✅ Glassmorphism effect */
+  .glass-form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  /* ✅ Make input fields responsive and stylish */
+  .glass-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid rgba(0, 123, 255, 0.7);
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(66, 64, 64);
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  /* ✅ Adjust placeholder styling */
+  .glass-form input::placeholder {
+    color: grey; /* ✅ Lighter text */
+    opacity: 0.7;
+    font-size: 14px;
+  }
+  
+  /* ✅ Input focus effect */
+  .glass-form input:focus {
+    border-color: rgba(0, 123, 255, 1);
+  }
+  /* Style dropdown similar to input fields */
+.glass-form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid rgba(0, 123, 255, 0.7);
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color:grey;
+    outline: none;
+    transition: 0.3s;
+    appearance: none; /* Removes default dropdown arrow */
+    cursor: pointer;
+  }
+  
+  /* Dropdown focus effect */
+  .glass-form select:focus {
+    border-color: rgba(0, 123, 255, 1);
+  }
+  
+  /* Dropdown options */
+  .glass-form select option {
+    background: rgba(0, 123, 255, 0.8);
+    color: white;
+  }
+  
+  
+  /* ✅ Styled button */
+  .glass-form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(0, 123, 255, 0.8);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .glass-form button:hover {
+    background: rgba(0, 123, 255, 1);
+  }
+  
+  /* ✅ Responsive Design for Small Screens */
+  @media (max-width: 500px) {
+    .glass-form {
+      width: 95%;
+      padding: 20px;
+    }
+  
+    .glass-form input,
+    .glass-form button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  /* ✅ Message styling */
+  .message {
+    color: rgb(13, 151, 61);
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  

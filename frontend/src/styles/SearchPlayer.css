@@ -1,0 +1,67 @@
+/* ✅ Center the search form */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* ✅ Input and button styles */
+.search-container input,
+.search-container button {
+  width: 300px;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 2px solid rgba(0, 123, 255, 0.7);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: rgb(68, 58, 58);
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+/* ✅ Placeholder Styling */
+.search-container input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+/* ✅ Button Hover Effect */
+.search-container button:hover {
+  background: rgba(0, 123, 255, 1);
+}
+
+/* ✅ Players Table */
+.players-table {
+  width: 80%;
+  max-width: 800px;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: rgb(68, 59, 59);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* ✅ Table Header */
+.players-table th {
+  padding: 12px;
+  background: rgba(0, 123, 255, 0.8);
+  color: rgb(46, 38, 38);
+  text-align: left;
+}
+
+/* ✅ Table Rows */
+.players-table td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ✅ Alternate row background */
+.players-table tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05);
+}

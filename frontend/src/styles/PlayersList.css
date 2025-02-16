@@ -1,0 +1,41 @@
+/* Center the players table */
+.players-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: url("https://source.unsplash.com/1600x900/?cricket") no-repeat center center/cover;
+  }
+  
+  /* Table Styling */
+  .players-table {
+    width: 80%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Table Header */
+  .players-table th {
+    padding: 12px;
+    background: rgba(0, 123, 255, 0.8);
+    color: white;
+    text-align: left;
+  }
+  
+  /* Table Rows */
+  .players-table td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Alternate row background */
+  .players-table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
