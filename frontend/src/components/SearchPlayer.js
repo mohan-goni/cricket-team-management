@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../styles/SearchPlayer.css";
+import { API_BASE_URL } from "../config";
 
-const searchPlayerAPI = "http://localhost:3000/players/";
-
+const playersListAPI = `${API_BASE_URL}/players/`;
 export default function SearchPlayer() {
   const [searchQuery, setSearchQuery] = useState("");
   const [players, setPlayers] = useState([]);

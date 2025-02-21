@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../styles/PlayersList.css";
+import { API_BASE_URL } from "../config";
 
-const playersListAPI = "http://localhost:3000/players/";
+const playersListAPI = `${API_BASE_URL}/players/`;
 
 export default function PlayersList() {
   const [players, setPlayers] = useState([]);

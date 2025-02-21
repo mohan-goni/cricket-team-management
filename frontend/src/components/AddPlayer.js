@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../styles/AddPlayer.css"
+import { API_BASE_URL } from "../config";
 
-const addPlayersAPI = "http://localhost:3000/players/";
-
+const playersListAPI = `${API_BASE_URL}/players/`;
 export default function AddPlayer() {
   const [playerName, setPlayerName] = useState("");
   const [jerseyNumber, setJerseyNumber] = useState("");

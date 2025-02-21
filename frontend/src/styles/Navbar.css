@@ -1,4 +1,4 @@
-/* ✅ General Navbar Styling */
+
 .navbar {
   display: flex;
   flex-direction: column;
@@ -15,7 +15,7 @@
   z-index:1000;
 }
 
-/* ✅ Navbar Brand */
+
 .navbar-brand {
   display: flex;
   flex-direction: row;
@@ -32,7 +32,7 @@
   font-size: 22px;
 }
 
-/* ✅ Navigation Links */
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -57,7 +57,7 @@
   background: rgba(0, 123, 255, 0.7);
 }
 
-/* ✅ Hamburger Menu (Mobile Only) */
+
 .menu-toggle {
   display: none;
   background: none;
@@ -67,7 +67,7 @@
   color: rgb(34, 29, 29);
 }
 
-/* ✅ Responsive Design */
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;

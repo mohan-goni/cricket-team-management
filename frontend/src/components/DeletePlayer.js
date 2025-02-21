@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../styles/DeletePlayer.css";
+import { API_BASE_URL } from "../config";
 
-const deletePlayerAPI = "http://localhost:3000/players/";
-
+const playersListAPI = `${API_BASE_URL}/players/`;
 export default function DeletePlayer() {
   const [query, setQuery] = useState("");
   const [message, setMessage] = useState("");
